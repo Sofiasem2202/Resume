@@ -1,0 +1,110 @@
+
+    <div>
+      {{#with person}}
+    <h1>{{name}} </h1>
+    <br>
+    <div>{{age}}</div>
+    <br>
+    <em>{{gender}}</em>
+    <br>
+    <ul>
+   {{#with address}}
+    <li>
+     <p>{{street}}</p>
+     <li>
+     <p>{{city}}</p>
+     <li>
+     <p>{{state}}</p>
+     <li>
+     <p>{{zip}}</p>
+     <li>
+     <p>{{country}}</p>
+     </li>
+      {{/with}}
+      <ul>{{#each education}}
+        <li>{{degree}}</li>
+        <li>{{major}}</li>
+        <li>{{university}}</li>
+        <li>(graduationYear) {{graduationYear}}</li>
+        {{/each}}
+         <br>  
+         <div>
+          <hr>{{#each workExperience}}
+          <li>
+         <p> {{company}}</p>
+          
+        <em> {{title}}</em>
+ 
+        <div>
+        {{startDate}} -
+        {{endDate}}
+        </div>
+        <p>{{responsibilities}}</p>
+        <div>
+      {{year_founded}}
+         </div>
+         <em>{{industry}}</em>
+        <ul>
+          <li>{{#each employees}}
+         {{name}}
+
+         <li>{{position}}
+        <li>{{department}}
+         <ul>
+          <li>{{#each projects}}
+        {{name}}
+        <li>
+       <p>{{description }}</p>
+       <li>{{status}}
+
+        <br>
+        <br>{{#each teams}}
+       <em> {{team_name}}</em>
+       <br>
+       {{#with team_leader}}
+       <ul>
+      <em>{{name}}<br>
+       <em>{{title}}<br>
+       <em>{{email}}<br>
+{{/with}}<br>
+{{#each team_members}}
+<em>{{name}}<br>
+<em>{{title}}<br>
+<em>{{email}}<br></em>
+<br>
+
+          <strong>{{#each skills}}
+          {{this}}
+          {{/each}}</strong>
+
+          {{#each projects}}
+          <br>
+          <ul><li>{{name}}<br>
+          <li> {{description}}<br>
+        <p> <strong> {{#with technologies}}
+      {{this}}
+          {{/with}}</strong></p>
+
+          {{#each team_members}}
+        <hr> {{name}}<br>{{title}}
+         {{/each}}<br>
+         {{#with team_members}}
+        <hr> {{name}}<br>{{title}}
+         
+          {{/with}}
+          {{/each}}
+          {{/each}}
+          {{/each}}
+          {{/each}}
+          {{/each}}
+          {{/each}}
+          </div>
+          {{/with}}
+          </div>
+
+
+
+
+
+
+
