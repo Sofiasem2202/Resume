@@ -1,0 +1,82 @@
+
+    <div>
+    <h1>{{name}} </h1>
+    <br>
+    <div>{{birthdate}}</div>
+    <br>
+    <em>{{birthplace}}</em>
+    <br>
+    <em>{{deathdate}}</em>
+    <br>
+    <em>{{deathplace}}</em>
+    <br>
+    <em>{{nationality}}</em>
+    <br>
+    <em>{{occupation}}</em>
+    <br>
+    <ul>
+      <hr>
+     </div>
+     {{#each known_for}}
+     <ul>{{this}}</ul> 
+      {{/each}}
+      {{#each education}}
+    <hr>
+    <ul><li>{{degree}}
+    <li>{{field}}
+    <li>{{institution}}
+    <li>{{year}}
+      {{/each}}
+{{#each notable_publications}}
+    <hr>
+    <li>{{title}}
+    <li>{{year}}
+    <li>{{publisher}}
+    {{/each }}
+     {{#each partners}}
+    <hr>
+    <li>{{name}}
+    <li>{{relationship}}
+    <li>{{years}}
+    {{/each }}
+{{#each awards}}
+    <hr>
+    <li>{{title}}
+    <li>{{year}}
+    <li>{{description}}
+{{/each}}
+<br>
+<hr>
+<br>
+{{#each influences}}
+<li>{{this}}</li> 
+{{/each}}
+<br><hr><br>
+{{#each influenced}}
+<li>{{this}}</li> 
+{{/each}}
+<br><hr><br>
+{{#each quotes}}
+<li>{{this}}</li> 
+{{/each}}
+    {{#each major_discoveries}}<li></li><hr>
+      {{title}}
+      {{year}}
+      {{description}}
+      {{/each}}
+{{#with contributions}}<li></li><hr>
+      {{title}}
+      {{description}}
+      {{year}}
+      {{field}}
+      {{/with}}
+
+
+
+
+
+
+
+
+
+
