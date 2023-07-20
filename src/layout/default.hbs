@@ -29,36 +29,24 @@
 </em>
 <br>
 </div>
+<div>
+  <br>
+  <address>
+    {{address}}
+  </address>
+  <br>
+</div>
 <br>
  <hr>
  </header>
  {{/with}}
-
- <nav>
-  {{> link text="Skills" href="/skills" line=true }}
-  {{> link text="Summery" href="/summary" }}
-  
- </nav>
- 
-    {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   --}}
+{{> nav}}
+{{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   --}}
     {{{body}}}
-    {{#with footer }}
-  <footer>
-  <hr>
-  <br>
-  <div>
-  {{#with social}}
-  {{> link text=email.text href=email.href  blank=true }}
-  {{> link text=phone.text href=phone.href blank=true }}
-  {{> link text=Linkedin.text href=Linkedin.href blank=true }}
-  {{/with}}
-  </div>
-  <br>
-  <div>
-     <em>Copyright by {{ ../header/name/firstname }} {{ ../header/name/lastname }} </em>
-  </div>
-</footer>
-{{/with}}
+
+
+	
+    {{> footer social=footer.social firstname=header.name.firstname lastname=header.name.lastname address=header.address}}
   </body>
 
 </html>
