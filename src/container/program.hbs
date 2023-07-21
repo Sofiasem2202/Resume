@@ -11,12 +11,10 @@
      <br>{{name}}
      <br> {{type}}
       <br> {{duration}}
-    {{/each}}
+      
     {{#with details}}
-    {{#with museum}}{{name}}
-    {{/with}}
-    {{/with}}
-    
+    {{#with museum}}<hr>
+    {{name}}
     {{#with location}}<hr>
     <br> {{address}}
     <br> {{city}}
@@ -33,16 +31,21 @@
     <br> {{audio_guide}}
 
     {{/each}}
+    {{/with}}
+    {{/with}}
+    
+    
 
 {{#with guide}}<hr>
 <br>{{name}}
 <br>{{language}}
 <br>{{rating}}
 {{/with}}
-
-{{name}}
-{{type}}
-{{duration}}
+{{/each}}
+<hr>
+<br>{{name}}
+<br>{{type}}
+<br>{{duration}}
 
 {{#with details}}<hr>
 {{#with venue }}
@@ -52,7 +55,7 @@
 <br>{{address}}
 <br>{{city}}
 <br>{{country}}
-{{/with}}
+
 {{/with}}
 {{/with}}
 
@@ -68,8 +71,8 @@
 <br>{{rating}}
 
 
-{{/with}}
-    
+    {{/with}}
+    {{/with}}
     {{/with}}
     {{/with}}
       
