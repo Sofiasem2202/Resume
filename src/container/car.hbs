@@ -1,0 +1,88 @@
+<h1>{{make}}</h1><h2>{{model}}</h2>
+{{year}} {{color}}
+
+{{#with features}}<hr>
+{{#with interior}}
+{{#with seats}}
+<br>{{material}}
+<br>{{color}}
+<br>{{#if heated}}heated{{/if}}
+<br>{{#if ventilated}}ventilated{{/if}}
+{{/with}}
+{{#with dashboard}}<hr>
+<br>{{material}}
+<br>{{color}}
+{{#with display}}<hr>
+<br>{{type}}
+<br>{{size}}
+<br>{{resolution}}
+<br>{{#if touchscreen}}touchscreen{{/if}}
+{{/with}}
+{{/with}}
+{{#with audio}}<hr>
+<br>{{system}}
+<br>{{speakers}}
+<br>{{#if subwoofer}} subwoofer {{/if}}
+<br>{{#if bluetooth}}bluetooth {{/if}}
+<br>{{#if USB}}USB {{/if}}
+{{/with}}
+{{/with}}
+{{#with exterior}}<hr>
+{{#with wheels}}
+<br>{{size}}
+<br>{{type}}
+<br>{{color}}
+{{/with}}
+{{#with headlights}}<hr>
+<br>{{type}}
+<br>{{brightness}}
+<br>{{#if automatic}}automatic{{/if}}
+{{/with}}
+{{#with sunroof}}<hr>
+<br>{{type}}
+<br>{{size}}
+<br>{{automatic}}
+{{/with}}
+{{/with}}
+
+{{#with safety}}<hr>
+{{#with airbags}}
+<br>{{front}}
+<br>{{side}}
+<br>{{knee}}
+<br>{{rear}}
+{{/with}}
+{{#with assistance}}<hr>
+<br>{{#if blind_spot_monitoring}}blind_spot_monitoring{{/if}}
+<br>{{#if rear_cross_traffic_alert}}rear_cross_traffic_alert{{/if}}
+<br>{{#if lane_departure_warning}}lane_departure_warning{{/if}}
+<br>{{#if adaptive_cruise_control}}adaptive_cruise_control{{/if}}
+<br>{{#if collision_warning}}collision_warning{{/if}}
+{{/with}}
+{{/with}}
+{{/with}}
+
+{{#with engine}}<hr>
+<br>{{type}}
+<br>{{displacement}}
+<br>{{horsepower}}
+<br>{{torque}}
+{{#with transmission}}<hr>
+<br>{{type}}
+<br>{{gears}}
+{{/with}}
+{{/with}}
+
+{{#with price}}<hr>
+<br>{{base}}
+<br>{{destination}}
+
+{{#with options}}<hr>
+<br>{{navigation}}
+<br>{{moonroof}}
+<br>{{premium_paint}}
+{{/with}}
+{{total}}
+{{/with}}
+
+
