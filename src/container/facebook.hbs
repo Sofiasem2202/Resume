@@ -1,99 +1,114 @@
 <strong>
   <h1>{{name}}</h1>
 </strong>
-
-{{#each users}}<hr>
-<li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
-
-        {{#each friends}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+<hr>
+{{#each users}}
+ {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
+<hr>
+        {{#each friends}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         
-
-        {{#each mutual_friends}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+<hr>
+        {{#each mutual_friends}}
+        <br>{{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
-         <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
-         {{#each mutual_friends}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+<hr>
+         {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
+      <hr>
+         {{#each mutual_friends}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
+     <hr>   
       {{/each}}
       
-      {{#each groups}}<hr>
-    <li>{{id}}
-    <li>{{name}}
-      <li>{{description}}
-         {{#each members}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+      {{#each groups}}
+    {{id}}
+    <br>{{name}}
+      <br>{{description}}
+      <hr>
+         {{#each members}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
-        <li>{{id}}
-    <li>{{name}}
-      <li>{{description}}
-        {{#each members}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+        <hr>
+        {{id}}
+    <br>{{name}}
+      <br>{{description}}
+      <hr>
+        {{#each members}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
+        <hr>
       {{/each}}
-      <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
-         {{#each friends}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
-         {{#each mutual_friends}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
-         {{#each mutual_friends}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+      {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
+      <hr>
+         {{#each friends}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
+      <hr>
+         {{#each mutual_friends}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
+      <hr>
+         {{#each mutual_friends}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
+        
         {{/each}}
+        
         {{/each}}
-
- {{#each groups}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{description}}
-     {{#each members}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+<hr>
+ {{#each groups}}
+        {{id}}
+  <br>{{name}}
+    <br>{{description}}
+    <hr>
+     {{#each members}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{description}}
-      {{#each members}}<hr>
-        <li>{{id}}
-  <li>{{name}}
-    <li>{{gender}}
-      <li>{{age}}
+        <hr>
+        {{id}}
+  <br>{{name}}
+    <br>{{description}}
+    <hr>
+      {{#each members}}
+        {{id}}
+  <br>{{name}}
+    <br>{{gender}}
+      <br>{{age}}
         {{/each}}
         {{/each}}
 {{/each}}
