@@ -1,116 +1,145 @@
 <strong>
   <h1>{{name}}</h1>
 </strong>
-<hr>
+<div><strong>Users</strong></div>
 {{#each users}}
+
 <hr>
  {{id}}
-  <br>{{name}}
+  <br>{{name}} ({{age}})
     <br>{{gender}}
-      <br>{{age}}
-<hr>
+     
+<br>
+<br>
+<div>  <strong>Friends:</strong></div> 
         {{#each friends}}
-        {{id}}
-  <br>{{name}}
+       <br> {{id}}
+  <br>{{name}}({{age}})
     <br>{{gender}}
-      <br>{{age}}
-        
-<hr>
-<h1> {{name}}</h1>
+<br>
+<br>
+<div><strong>mutual_friends</strong></div>
         {{#each mutual_friends}}
         <br>{{id}}
-  <br>{{name}}
+  <br>{{name}}({{age}})
     <br>{{gender}}
-      <br>{{age}}
+      {{/each}}
+<br>
+      {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      
+      <br>
+      <br>
+<div><strong>mutual_friends</strong></div>
+         {{#each mutual_friends}}
+         <br>
+      {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      {{/each}}
+   {{/each}}
+     <br> 
+     <br>
+
+
+<div><strong>groups</strong></div>
+      {{#each groups}}
+      
+   <br> {{id}}
+    <br>{{name}}
+      <br>{{description}}
+     <br>
+     <br>
+     <div><strong>members</strong></div>
+         {{#each members}}
+         
+       <br> {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      {{/each}}
+      <br>
+     <br>
+        
+        <br>
+        {{id}}
+    <br>{{name}}
+      <br>{{description}}
+       <br>
+     <br>
+     <div><strong>members</strong></div>
+        {{#each members}}
+        
+       <br> {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+     
+     
         {{/each}}
-<hr>
+       {{/each}}
+       <br>
+     <br>
+    <br>  {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      <br>
+     <br>
+      <div> <strong>friends</strong></div>
+         {{#each friends}}
+         
+       <br> {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      <br>
+     <br>
+      <div><strong>mutual_friends</strong></div>
+         {{#each mutual_friends}}
+        {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      
+      <div><strong>mutual_friends</strong></div>
+         {{#each mutual_friends}}
+        {{id}}
+  <br>{{name}}({{age}})
+    <br>{{gender}}
+      <br>
+     <br>
+        {{/each}}
+        
+        {{/each}}
+              
+ <br>
+     <br>
+ {{#each groups}}
+         <div><strong>groups</strong></div>
          {{id}}
   <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-      <hr>
-         {{#each mutual_friends}}
-        {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-        {{/each}}
-     <hr>   
-      {{/each}}
-      
-      {{#each groups}}
-    {{id}}
-    <br>{{name}}
-      <br>{{description}}
-      <hr>
-         {{#each members}}
-        {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-        {{/each}}
-        <hr>
-        {{id}}
-    <br>{{name}}
-      <br>{{description}}
-      <hr>
-        {{#each members}}
-        {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-        {{/each}}
-        <hr>
-      {{/each}}
-      {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-      <hr>
-         {{#each friends}}
-        {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-      <hr>
-         {{#each mutual_friends}}
-        {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-      <hr>
-         {{#each mutual_friends}}
-        {{id}}
-  <br>{{name}}
-    <br>{{gender}}
-      <br>{{age}}
-        {{/each}}
-        
-        {{/each}}
-        
-        {{/each}}
-<hr>
- {{#each groups}}
-        {{id}}
-  <br>{{name}}
     <br>{{description}}
-    <hr>
+     <br>
+     <br>
+     <div><strong>members</strong></div>
      {{#each members}}
         {{id}}
-  <br>{{name}}
+  <br>{{name}}({{age}})
     <br>{{gender}}
-      <br>{{age}}
+     <br>
+     <br>
         {{/each}}
-        <hr>
+         <br>
+     <br>
         {{id}}
   <br>{{name}}
     <br>{{description}}
-    <hr>
+     <br>
+     <br>
+     <div><strong>members</strong></div>
       {{#each members}}
         {{id}}
-  <br>{{name}}
+  <br>{{name}}({{age}})
     <br>{{gender}}
-      <br>{{age}}
+      
         {{/each}}
         {{/each}}
-{{/each}}
+          {{/each}}
+          {{/each}}   
