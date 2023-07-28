@@ -947,7 +947,7 @@ router.get('/shophome', function (req, res) {
           link: 'https://www.youtube.com/news',
         },
         {
-          text: 'Fashion & Beauty',
+          text: 'News',
           link: 'https://www.youtube.com/channel/UC1x8rV_f-2yPpzlN0JWZXIQ',
         },
         {
