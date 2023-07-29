@@ -69,30 +69,49 @@
       </div>
 </div></div>
 </div>
-<div class="col-4">
-<div class="row ">
- <div class="card">
-<div class="card-body">
-<button class="btn btn-success">Швидке замовлення</button>
-<button class="btn btn-danger">Видалити</button>
-<button class="btn btn-info">Детальніше</button>
-</div>
- 
- 
- <div class="card mt-2 col-4">
-   <div class="card-body">
-                    <div class="card-title">Всього</div>
-                    
-                    
-                <li class="list-group-item">Ноут: 25 000 ₴</a>
-                </li>
-                <li class="list-group-item ">Мишка: 25 000 ₴</li>
-                <li class="list-group-item">Клава: 25 000 ₴</li>
-                 <hr></div></div>
 
-                 
-                 </div>
-</div></div>
+
+<div class="row">
+  <div class="col-8">
+
+    {{#with contacts_data }}
+    <h3>{{titel}}</h3>
+
+    <div class="my-4">
+      {{#each button}}
+      {{#if isPrimary includeZero=true}}
+      <button type="button" class="btn btn-uotline-warning me-2">{{this.text}}</button>
+      {{else}}
+      {{#if isOutline includeZero=true}}
+      <button type="button" class="btn btn-uotline-warning ">{{this.text}}</button>
+      {{/if}}
+      {{/if}}
+      {{/each}}
+
+    </div>
+    
+
+    {{#with form}} 
+    <div class="row">
+      <div class="col-6 mb-4" >
+        {{#with input}}
+        {{#with surname}}
+        <label class="form-label">{{label}}</label>
+        <label class="form-control" placeholder="{{placeholder}}"></label>
+        <div class="form-text">{{caption}}</div>
+        {{/with}}
+         {{/with}}
+         {{/with}}
+         {{/with}}
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
 
                  <hr>
       <div class="col-12">
@@ -108,7 +127,24 @@
      <input type="radio" class="form-check-input">
      </div>
      <hr>
-   <div class="display-6">Доставка</div>
 
 
+
+
+   <div class="row">
+  <div class="col-8">
+{{#with deliveru}}
+<h3>{{titel}}</h3>
+   {{#each select}}
+       <label class="form-label">{{label}}</label>
+        <label class="form-control" placeholder={{placeholder}}></label>
+        
+        {{/each}}
+        {{#each options}}
+
+
+        {{/each}}
+
+{{/with}}
+    </div></div>
 </main>
