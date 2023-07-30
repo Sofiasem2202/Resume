@@ -1,6 +1,6 @@
 {{! 1 }}
-
-  <section class='row'>
+<div class="m-5">
+  <section class='row '>
 
     <div class='card col-12 mb-5'>
       <div class='nav'>
@@ -338,9 +338,9 @@
           <select class='form-select form-select-lg'>
 
             <option
-              value=''
+              value='
               disabled
-              selected
+              selected'
             >{{placeholder}}</option>
 
             {{#each options}}
@@ -367,9 +367,7 @@
                 name='factors'
                 id=''
                 class='form-check-input'
-                {{#if @first}}
-                checked
-                {{/if}}
+                {{#if @first}}checked{{/if}}
               />
             </div>
           {{/each}}
@@ -495,4 +493,4 @@
 
   </section>
 
-</main>
+</main></div>
